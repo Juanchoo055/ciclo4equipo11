@@ -32,12 +32,10 @@ connection.once('open', () => {
 const userRoutes = require('./src/controllers/usuario.controller')
 
 // Set route path on project
-app.get('/', async (req, res) => {
-  res.status(200).json("App is running rigth now!")
-})
 
-app.use('/users', userRoutes)
+
+app.use('/', express.static('public'));
 
 app.listen(PORT, ()=>{
-    console.log(`Successfully served on port: ${PORT}.`);
+    console.log(`Successfully served on port: http://localhost:${PORT}/`);
 })

@@ -2,7 +2,7 @@
   "name": "project_administration",
   "version": "1.0.0",
   "description": "node express and mongo implementation of group investigation users and clients",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "mocha",
     "start": "node index.js",
