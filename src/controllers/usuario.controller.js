@@ -5,7 +5,7 @@ const router = require('express').Router()
 router.route('/new').post((req, res) => {
     const newUser = new User(req.body)
     newUser.save()
-        .then(user => res.json(user))
+        .then(user => res.status(200).json(user))
         .catch(err => res.status(400).json("Error! " + err))
 })
 
