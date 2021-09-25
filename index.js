@@ -22,6 +22,7 @@ const PORT = process.env.PORT || 5000
 mongoose.connect(source, {
   useNewUrlParser: true,
   useUnifiedTopology: true
+
 })
 const connection = mongoose.connection
 connection.once('open', () => {
@@ -29,7 +30,7 @@ connection.once('open', () => {
 })
 
 // Import and user routes
-const userRoutes = require('./src/controllers/user.controller')
+const userRoutes = require('./src/controllers/usuario.controller')
 
 // Set route path on project
 app.get('/', async (req, res) => {
