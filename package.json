@@ -1,0 +1,25 @@
+{
+  "name": "grupo11udea",
+  "version": "0.1.0",
+  "description": "aplicacion para gestionar investigaciones universitarias",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juanchoo055/ciclo4equipo11.git"
+  },
+  "keywords": [
+    "app"
+  ],
+  "author": "grupo 11 UDEA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Juanchoo055/ciclo4equipo11/issues"
+  },
+  "homepage": "https://github.com/Juanchoo055/ciclo4equipo11#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
