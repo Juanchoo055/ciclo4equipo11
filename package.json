@@ -2,11 +2,11 @@
   "name": "project_administration",
   "version": "1.0.0",
   "description": "node express and mongo implementation of group investigation users and clients",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "start": "node server.js",
-    "start-dev": "node server.js"
+    "start": "node index.js",
+    "start-dev": "node index.js"
   },
   "author": "",
   "license": "ISC",

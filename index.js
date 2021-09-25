@@ -29,13 +29,15 @@ connection.once('open', () => {
 })
 
 // Import and user routes
-const userRoutes = require('./src/controllers/usuario.controller')
+const userRoutes = require('./src/controllers/user.controller')
 
 // Set route path on project
+app.get('/', async (req, res) => {
+  res.status(200).json("App is running rigth now!")
+})
 
-
-app.use('/', express.static('public'));
+app.use('/users', userRoutes)
 
 app.listen(PORT, ()=>{
-    console.log(`Successfully served on port: http://localhost:${PORT}/`);
+    console.log(`Successfully served on port: ${PORT}.`);
 })
