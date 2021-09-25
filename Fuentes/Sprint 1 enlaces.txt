@@ -1,0 +1,11 @@
+• Enlace para el manejo de repositorios públicos:
+https://github.com/
+
+• Enlace para la herramienta Git del equipo local:
+https://git-scm.com/download/win
+
+• Enlace para comandos básicos de Git:
+https://www.freecodecamp.org/espanol/news/10-comandos-de-git-que-todo-desarrollador-deberia-saber/
+
+• Enlace seguimiento actividades Trello:
+https://trello.com/b/Cp5ZpIVM/proyecto-ciclo-4a
