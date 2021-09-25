@@ -1,7 +1,7 @@
 var assert = require('assert');
 var expect = require('chai').expect
 
-var User = require('../src/models/user.model');
+var User = require('../src/models/usuario.model');
 
 describe('#userModel test their validations', function(){
 
