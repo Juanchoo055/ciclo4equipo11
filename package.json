@@ -1,5 +1,5 @@
 {
-  "name": "project_administration",
+  "name": "ciclo4equipo11",
   "version": "1.0.0",
   "description": "node express and mongo implementation of group investigation users and clients",
   "main": "index.js",
@@ -8,15 +8,29 @@
     "start": "nodemon index.js",
     "start-dev": "nodemon index.js"
   },
-  "author": "",
+  "author": "grupo114A",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "chai": "^4.3.4",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mocha": "^9.1.1",
-    "mongoose": "^6.0.7",
-    "nodemon": "^2.0.12"
+    "mongoose": "^6.0.11"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juanchoo055/ciclo4equipo11.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Juanchoo055/ciclo4equipo11/issues"
+  },
+  "homepage": "https://github.com/Juanchoo055/ciclo4equipo11#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.13"
   }
 }
