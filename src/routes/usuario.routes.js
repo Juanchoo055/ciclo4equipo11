@@ -1,19 +1,13 @@
 'use strict'
- 
-// Cargamos el módulo de express para poder crear rutas
-var express = require('express');
- 
-// Cargamos el controlador
-var usuarioController = require('../controllers/usuario.controller');
- 
-// Llamamos al router
-var api = express.Router();
- 
-// Creamos las rutas
-api.get('/', usuarioController.get);
-api.delete('/delete:email', usuarioController.delete);
-api.post('/new', usuarioController.post);
 
- 
-// Exportamos la configuración
+var express = require('express');
+var UsuarioController = require('../controllers/usuario.controller');
+
+var api = express.Router();
+
+api.post('/usuario', UsuarioController.crearUsuario);
+api.get('/usuario', UsuarioController.obtenerUsuarios);
+api.put('/usuario/:id', UsuarioController.actualizarUsuario);
+api.delete('/usuario/:id', UsuarioController.eliminarUsuario);
+
 module.exports = api;
