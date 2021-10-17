@@ -1,4 +1,6 @@
 // establish an express app
+'use strict'
+
 const express = require('express')
 const app = express()
 
@@ -11,9 +13,11 @@ app.use(express.json())
 
 // the messenger between our app and our database
 const mongoose = require('mongoose')
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 // allow us to hide our connection secret in the process.env object
-require('dotenv').config()
 
 const source = process.env.ATLAS_CONNECTION
 const PORT = process.env.PORT || 5000
@@ -30,7 +34,8 @@ connection.once('open', () => {
 })
 
 // Import and user routes
-const userRoutes = require('./src/controllers/usuario.controller')
+const userRoutes = require('./src/routes/usuario.routes')
+const { Mongoose } = require('mongoose')
 
 // Set route path on project
 app.get('/', async (req, res) => {
@@ -38,6 +43,7 @@ app.get('/', async (req, res) => {
 })
 
 app.use('/users', userRoutes)
+
 
 app.listen(PORT, ()=>{
     console.log(`Successfully served on port: ${PORT}.`);
