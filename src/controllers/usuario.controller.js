@@ -29,13 +29,6 @@ router.route('/delete/:id').delete((req, res) => {
         .catch(err => res.status(400).json('Error! ' + err))
 })
 
-// router.put('/:id', async (req,res)=> {
-//     const {name, email, password, age} = req.body;
-//     const updateUser = {name, email, password, age};
-//     await User.findByIdAndUpdate(req.params.id, updateUser)
-//     res.json({status: 'Usuario Actualizado'})
-// })
-
 
 router.route('/update/:id').put((req, res) => {
     User.findByIdAndUpdate(req.params.id, req.body)
